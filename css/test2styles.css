@@ -1,0 +1,47 @@
+.frivillige {
+    display: flex;
+    gap: 5rem; /* Space between each toggle */
+    justify-content: center;
+    align-items: center;
+}
+
+/* General styles for the image container */
+.hands-indie {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide the checkbox */
+.hands-indi input {
+    display: none;
+}
+
+/* Style for the first image */
+.hands-indi .ledig-billede {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Style for the second image */
+.hands-indi .taget-billede {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* When the checkbox is checked, show the second image */
+.hands-indi input:checked + label .ledig-billede {
+    opacity: 0;
+}
+
+.hands-indi input:checked + label .taget-billede {
+    opacity: 1;
+}
+
+  
+
+     

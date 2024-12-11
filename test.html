@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/teststyles.css">
+</head>
+<body>
+
+  <h1>Progress Bar with Sequential Button</h1>
+
+  <!-- Radio Buttons for Progress Tracking -->
+  <input type="radio" id="step1" name="progress" class="hidden-radio">
+  <input type="radio" id="step2" name="progress" class="hidden-radio">
+  <input type="radio" id="step3" name="progress" class="hidden-radio">
+  <input type="radio" id="step4" name="progress" class="hidden-radio">
+  <input type="radio" id="step5" name="progress" class="hidden-radio">
+
+  <!-- Progress Bar -->
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+
+  <!-- Image Container -->
+  <div class="image-container">
+    <img src="img/ledig.svg" alt="Default Image" class="default">
+    <img src="img/taget.svg" alt="New Image" class="new">
+  </div>
+
+  <!-- Sequential Button -->
+  <div class="button-container">
+    <label for="step1" class="progress-button"></label>
+    <label for="step2" class="progress-button"></label>
+    <label for="step3" class="progress-button"></label>
+    <label for="step4" class="progress-button"></label>
+    <label for="step5" class="progress-button"></label>
+  </div>
+
+
+</body>
+</html>
