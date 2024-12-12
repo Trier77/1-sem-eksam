@@ -37,7 +37,7 @@ section {
   }
   
  /* Tilføj en grøn border, når alle checkboxes er markeret */
- section:has(.taget:checked, .nok:checked, .all-engi:checked) {
+ section:not(:has(.taget:checked, .nok:checked, .all-engi:checked)) {
 
     width: 200px;
     height: 200px;
