@@ -44,11 +44,73 @@ body{
 }
 
 
-@media (min-width: 300px){
 
+.kontakt-elementer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10vw;
+}
+.navn-kasse, .email-kasse, .kategori-kasse, .besked-kasse, .spotter-type-kasse{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    
+}
+
+.kontakt-input{
+    max-width: 200px;
+}
+.form-labeler{
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+
+.spotter-type-kasse {
+    display: none;
+}
+
+/* Show the second select when the third option is selected */
+.kategori-kasse:has(option:checked#spotter) ~ .spotter-type-kasse {
+    display: block;
 }
 
 
-@media (min-width: 768px){
 
+
+
+@media (min-width: 768px){
+    .kontakt-elementer{
+        margin-left: 20vw;
+        width: 50vw;
+        
+    }
+
+        .navn-kasse, .email-kasse, .kategori-kasse, .spotter-type-kasse{
+        
+        flex-direction: row-reverse;
+        
+        
+    }
+    .kontakt-input{
+        max-width: 400px;
+    }
+
+    .form-labeler{
+        color: #fff;
+        padding-bottom: 0.5rem;
+        padding-left: 2rem;
+
+    }
+    #kategori-overskrift{
+        padding-left: 5.75rem;
+    }
+
+     #besked-overskrift{
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1024px){
+   
 }

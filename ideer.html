@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+    <form action="https://api.web3forms.com/submit" method="POST" class="kontakt-venstre">
+        <section class="kontakt-venstre-titel">
+            <h2>Forespørgsler og Idéer</h2>
+            <hr>
+            
+        </section>
+        <article class="kontakt-elementer">
+            <input type="hidden" name="access_key" value="dab1830d-0893-457b-8129-1fcacd0df5e5">
+
+        <section class="navn-kasse">
+            <label for="navn" class="form-labeler">Navn og eventuelt hvem du repræsentere</label>
+            <input type="text" name="navn" placeholder="Dit navn" class="kontakt-input" required>
+        </section>
+
+        <section class="email-kasse">
+            <label for="e-mail" class="form-labeler">E-mail til hvem vi kan vende tilbage til</label>
+            <input type="email" name="e-mail" placeholder="Din e-mail" class="kontakt-input" required>
+        </section>
+        
+        <section class="kategori-kasse">
+            <label for="kategori" class="form-labeler" id="kategori-overskrift">Vælg kategorien, der passer bedst til din forespørgsel</label>
+            <select name="kategori" id="kategori" class="kontakt-input">
+                <option value="Koncept" label="Koncept"></option>
+                <option value="Samarbejde" label="Samarbejde"></option>
+                <option value="Artist/Booking" label="Artist/Booking"></option>
+                <option value="Bliv Spotter" label="Bliv Spotter" id="spotter"></option>
+                <option value="Sponsor" label="Sponsor"></option>
+                <option value="Andet" label="Andet"></option>
+            </select>
+        </section>
+
+        <section class="spotter-type-kasse">
+            <label for="spotter-type"></label>
+            <select id="spotter-type">
+                <option value="Runner">Runner</option>
+                <option value="Teknisk">Teknisk</option>
+                <option value="Økonomisk">Økonomisk</option>
+            </select>
+        </section>
+
+        <section class="besked-kasse">
+            <label for="besked" class="form-labeler" id="besked-overskrift">Hvad har du at sige?</label>
+            <textarea name="besked" placeholder="Skriv din idé eller forespørgsel her" class="kontakt-input" required></textarea>
+        </section>
+        
+
+        <button type="submit">Send</button>
+        </article>
+        
+    </form>
+</body>
+</html>
