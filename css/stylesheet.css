@@ -28,7 +28,7 @@ body{
 }
 
 
-.container:not(:has(:checked)) {
+section {
     width: 200px;
     height: 200px;
     background-color: white;
@@ -37,8 +37,8 @@ body{
   }
   
  /* Tilføj en grøn border, når alle checkboxes er markeret */
- .container:has(:checked) {
-        
+ section:has(.taget:checked, .nok:checked, .all-engi:checked) {
+
     width: 200px;
     height: 200px;
     background-color: white;
