@@ -58,7 +58,7 @@ body {
   .progress-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #007bff;
+    /*background: #007bff;*/
     color: #fff;
     font-size: 16px;
     text-align: center;

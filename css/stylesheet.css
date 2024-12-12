@@ -26,11 +26,9 @@ body{
 .cover-billede{
     max-width: 30vw;
 }
-@container style(--besat:true){
 
-}
 
-.container {
+.container:not(:has(:checked)) {
     width: 200px;
     height: 200px;
     background-color: white;
@@ -39,9 +37,15 @@ body{
   }
   
  /* Tilføj en grøn border, når alle checkboxes er markeret */
- .checkboxes input[type="checkbox"]:checked ~ input[type="checkbox"]:checked ~ input[type="checkbox"]:checked ~ .container {
-    border-color: green;
+ .container:has(:checked) {
+        
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 5px solid rgb(4, 188, 47);
+    transition: border-color 0.3s ease;
 }
+
 
 
 
