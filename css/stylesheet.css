@@ -57,7 +57,7 @@ position: relative;
     background-color: var(--background-color);
     display: flex;
     justify-content: space-evenly;
-    width: 20%;
+    width: 40%;
     border-radius: 3rem;
 }
 .hjorne1-ja{   
@@ -119,6 +119,59 @@ position: relative;
 
 
 
+/* Tilføj en grøn border, når alle checkboxes er markeret */
+.projekter:not(:has(.taget:checked)) > .mangler .indikatorer .hjorne1-nej {   
+    display: none;   
+    
+}
+  
+ /* Tilføj en grøn border, når alle checkboxes er markeret */
+ .projekter:not(:has(.taget:checked)) > .mangler .indikatorer .hjorne1-ja {    
+    display: inline-flex;     
+}
+
+/* Tilføj en grøn border, når alle checkboxes er markeret */
+.projekter:not(:has(.all-engi:checked:checked)) > .mangler .indikatorer  .hjorne2-nej {    
+    display: none;        
+}
+  
+ /* Tilføj en grøn border, når alle checkboxes er markeret */
+ .projekter:not(:has(.all-engi:checked:checked)) > .mangler  .indikatorer  .hjorne2-ja {    
+    display: inline-flex;    
+}
+
+ /* Tilføj en grøn border, når alle checkboxes er markeret */
+ .projekter:not(:has(.nok:checked)) > .mangler .indikatorer  .hjorne3-nej {    
+    display: none;    
+}
+
+ /* Tilføj en grøn border, når alle checkboxes er markeret */
+ .projekter:not(:has(.nok:checked)) > .mangler .indikatorer  .hjorne3-ja {    
+    display: inline-flex;    
+}
+
+
+
+.skjult-indhold{
+    display: none;
+}
+#skjult:checked .skjult-indhold{
+    display: block;
+    background-color: var(--background-color);
+}
+
+.indikatorer{
+    display: flex;
+    align-items: center;
+    
+    font-size: 1.5rem;
+    
+}
+.indikatorer img{
+    width: 10%;
+    justify-content: space-evenly;
+}
+
 
 
 
@@ -130,6 +183,7 @@ position: relative;
     width: 80%;
     padding-left: 2rem;
     padding-bottom: 1rem;
+    z-index: 2;
 }
 
 .projekter .artist-info{
@@ -163,7 +217,7 @@ position: relative;
 
 .projekter .mangler{
     background-color: var(--background-color);
-    width: var(--width);
+    width: 100%;
 }
 
 
