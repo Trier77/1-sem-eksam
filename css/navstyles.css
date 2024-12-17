@@ -1,0 +1,181 @@
+/*headerens udseende og placering*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:  #000000;
+    
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+/*----------------------------------Navnar-------------------------------------*/
+/*navigationsbarens layout og funktion*/
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+header .navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+
+
+header .navbar ul li a:hover {
+    color: #fff;
+    
+}
+
+/*ikonet i venstre hjørnes størrelse*/
+.logo {
+    width: 9vw;
+}
+
+/*burgermenu-ikonets størrelse*/
+header .navbar .burger img{
+    width: 5%;
+}
+
+
+
+
+
+/*burgermenu bliver aktiveret*/
+.burger{
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+    /* Skjul navigationselementerne som standard */
+    header .navbar ul {
+        display: none;
+        flex-direction: column; /* Vertikal menu */
+        
+        width:50%;
+        background-color: #000;
+        position: absolute;
+        top: 100%; /* Lige under header */
+        right:0 ;
+        z-index: 999;
+       
+    }
+
+    /*overhaul af udseende til navbar'en*/
+    header .navbar ul li{
+        
+        border-bottom: 0.1rem solid #90081F;
+        width: 100%;
+        
+    }
+    header .navbar ul li a{
+        font-size: 100%;
+        padding: 10% 0;
+        
+        }
+
+        
+        
+    header .navbar ul .guide-container{
+        border-bottom: 0.1rem solid #ccc;
+        border-top: 0.1rem solid #ccc;
+    }
+
+    header .navbar ul li ul{
+        
+        top:0;
+        left: auto;
+        right: 100%;
+        border-top: none;
+        width: fit-content;
+       
+        
+    }
+    
+
+    header .navbar ul li ul li{
+        border-top: none;
+        
+        
+    }
+    header .navbar ul li ul .historie-container{
+        border-top: 0.1rem solid #ccc;
+        border-bottom: 0.1rem solid #90081F;
+        
+        border-left: 0.1rem solid #ccc;
+        
+    }
+
+    header .navbar ul li ul .disci-container{
+        border-right:0.1rem solid #ccc;
+        border-left: 0.1rem solid #ccc;
+        border-top: none;
+        border-bottom: 0.1rem solid #ccc;
+
+    }
+
+    
+    /* Viser navigationselementerne, når checkboxen er markeret */
+    #menu-toggle:checked + .burger + ul{
+        display: flex; /* Gør menuen synlig */
+        align-items: flex-end;
+        
+        
+        
+    }
+
+
+    @media (min-width: 768px){
+        
+        /*aktivering af checkbox i burgermenuen*/
+.burger, #menu-toggle{
+    display:none;
+
+}
+header .navbar ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+}
+
+header .navbar ul li a {
+    padding: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #90081F;
+    display: block;
+    white-space: nowrap;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width:fit-content;
+    display: none;
+    z-index: 999;
+    padding: 0;
+    
+
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 0.05rem solid #ccc;
+    padding: 1vw 0;
+
+}
+
+/*aktivering af under-menuen i HEMA+*/
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+
+        
+    }
