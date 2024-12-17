@@ -151,26 +151,18 @@ position: relative;
 }
 
 
-
-.skjult-indhold{
+#skjult{
     display: none;
 }
-#skjult:checked .skjult-indhold{
+.taeller{
+    display: none;
+}
+#skjult:checked ~ .taeller{
     display: block;
     background-color: var(--background-color);
 }
 
-.indikatorer{
-    display: flex;
-    align-items: center;
-    
-    font-size: 1.5rem;
-    
-}
-.indikatorer img{
-    width: 10%;
-    justify-content: space-evenly;
-}
+
 
 
 
@@ -218,6 +210,25 @@ position: relative;
 .projekter .mangler{
     background-color: var(--background-color);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mangler .indikatorer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    
+}
+.mangler .indikatorer section{    
+    display: flex;
+    justify-content: center;
+}
+
+.mangler .indikatorer section img{
+    width: 20%;
 }
 
 

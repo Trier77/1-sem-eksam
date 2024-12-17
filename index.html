@@ -38,11 +38,12 @@
 
     <main>
 
-        <input type="checkbox" id="skjult" >
-            
+          
 
         <article class="projekter" >
             
+            <input type="checkbox" id="skjult" >
+            <label for="skjult" class="skjult-indhold"> 
 
             <aside class="dato-hjorne">
                 <h4>Dato</h4>
@@ -79,18 +80,25 @@
                 <h5>Vi har brug for</h5>
                 
                 <picture class="indikatorer">
-                    <p>5</p>
-                    <img src="/img/ledig.svg" alt="" class="hjorne1-nej">
-                    <img src="/img/taget.svg" alt="" class="hjorne1-ja">
-
-                    <p>3</p>
-                    <img src="/img/default-engi.svg" alt="" class="hjorne2-nej">
-                    <img src="/img/all-engi.svg" alt="" class="hjorne2-ja">
-
-                    <p>5500</p>
-                    <img src="/img/ikkenok.svg" alt="" class="hjorne3-nej">
-                    <img src="/img/nok.svg" alt="" class="hjorne3-ja">
-                    </picture>
+                    <section>
+                        <p>5</p>
+                        <img src="/img/ledig.svg" alt="" class="hjorne1-nej">
+                        <img src="/img/taget.svg" alt="" class="hjorne1-ja">
+                    </section>
+                    
+                    <section>
+                        <p>3</p>
+                        <img src="/img/default-engi.svg" alt="" class="hjorne2-nej">
+                        <img src="/img/all-engi.svg" alt="" class="hjorne2-ja">
+                    </section>
+                    
+                    <section>
+                        <p>5500</p>
+                        <img src="/img/ikkenok.svg" alt="" class="hjorne3-nej">
+                        <img src="/img/nok.svg" alt="" class="hjorne3-ja">
+                        </picture>
+                    </section>
+                    
                     
                <!--- <aside class="checkboxes">
                     <label><input type="checkbox" class="taget" checked>
@@ -105,8 +113,8 @@
                         <img src="/img/ikkenok.svg" alt="" class="ledig-penge-fuld"><img src="/img/nok.svg" alt="" class="taget-penge-fuld"></label>        
                 </aside>  -->
             </div>
+        </label>
         
-        <label for="skjult" class="skjult-indhold"> 
             <section class="taeller">
                 <aside class="checkboxes">
                     <label><input type="checkbox" class="taget" checked>
@@ -131,7 +139,7 @@
                         <img src="/img/ikkenok.svg" alt="" class="ledig-penge-fuld"><img src="/img/nok.svg" alt="" class="taget-penge-fuld"></label>        
                 </aside>  
             </section>
-        </label>
+        
     
             
     
