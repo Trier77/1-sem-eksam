@@ -18,10 +18,7 @@ nav {
     display: block;
     unicode-bidi: isolate;
 }
-header .navbar ul {
-    list-style: none;
-    display: flex;
-}
+
 
 
 
@@ -30,6 +27,9 @@ header .navbar ul li a:hover {
     
 }
 
+.logo-kasse{
+padding-left: 45%;
+}
 /*ikonet i venstre hjørnes størrelse*/
 .logo {
     width: 9vw;
@@ -37,7 +37,7 @@ header .navbar ul li a:hover {
 
 /*burgermenu-ikonets størrelse*/
 header .navbar .burger img{
-    width: 5%;
+    width: 15%;
 }
 
 
@@ -48,6 +48,13 @@ header .navbar .burger img{
 .burger{
     display:flex;
     justify-content: flex-end;
+
+}
+
+/*aktivering af checkbox i burgermenuen*/
+#menu-toggle{
+    display:none;
+
 }
 
 
@@ -55,7 +62,7 @@ header .navbar .burger img{
     header .navbar ul {
         display: none;
         flex-direction: column; /* Vertikal menu */
-        
+        list-style: none;
         width:50%;
         background-color: #000;
         position: absolute;
@@ -68,21 +75,23 @@ header .navbar .burger img{
     /*overhaul af udseende til navbar'en*/
     header .navbar ul li{
         
-        border-bottom: 0.1rem solid #90081F;
+        border-bottom: 0.1rem solid #ff8c00;
         width: 100%;
         
     }
     header .navbar ul li a{
         font-size: 100%;
-        padding: 10% 0;
+        
+        text-decoration: none;
+        color: #ff8c00;
         
         }
 
         
         
     header .navbar ul .guide-container{
-        border-bottom: 0.1rem solid #ccc;
-        border-top: 0.1rem solid #ccc;
+        /*border-bottom: 0.1rem solid #ccc;
+        border-top: 0.1rem solid #ccc;*/
     }
 
     header .navbar ul li ul{
@@ -130,24 +139,36 @@ header .navbar .burger img{
 
 
     @media (min-width: 768px){
-        
-        /*aktivering af checkbox i burgermenuen*/
-.burger, #menu-toggle{
-    display:none;
 
+        .logo-kasse{
+            padding-left: 0;
+            }
+
+/*burgermenu bliver deaktiveret*/
+.burger{
+    display:none
 }
+
+header .navbar ul {
+    
+    display: flex;
+    flex-direction: row;
+    position: unset;
+}
+
 header .navbar ul li {
     margin: 0;
     padding: 0;
     position: relative;
+    border-bottom: none;
     
 }
 
 header .navbar ul li a {
     padding: 0 1.5rem;
-    text-decoration: none;
+    
     font-size: 1.25rem;
-    color: #90081F;
+    
     display: block;
     white-space: nowrap;
 }
@@ -176,6 +197,14 @@ header .navbar ul li:hover > ul {
     display: block;
 }
 
+header .navbar ul li ul .historie-container{
+    border: none;
+    
+}
 
+header .navbar ul li ul .disci-container{
+    border: none;
+
+}
         
     }
