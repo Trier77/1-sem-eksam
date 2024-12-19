@@ -21,7 +21,7 @@ nav {
 
 
 
-
+/*menupunkterne skifter farve når man hover*/
 header .navbar ul li a:hover {
     color: #fff;
     
@@ -30,7 +30,7 @@ header .navbar ul li a:hover {
 .logo-kasse{
 padding-left: 45%;
 }
-/*ikonet i venstre hjørnes størrelse*/
+/*logoet i venstre hjørnes størrelse*/
 .logo {
     width: 9vw;
 }
@@ -72,7 +72,7 @@ header .navbar .burger img{
        
     }
 
-    /*overhaul af udseende til navbar'en*/
+    /*udseende til dropdown navbar*/
     header .navbar ul li{
         
         border-bottom: 0.1rem solid #ff8c00;
@@ -80,20 +80,14 @@ header .navbar .burger img{
         
     }
     header .navbar ul li a{
-        font-size: 100%;
+        font-size: 150%;
         
         text-decoration: none;
         color: #ff8c00;
         
-        }
-
+        }       
         
-        
-    header .navbar ul .guide-container{
-        /*border-bottom: 0.1rem solid #ccc;
-        border-top: 0.1rem solid #ccc;*/
-    }
-
+  /*placering af undermenuen*/
     header .navbar ul li ul{
         
         top:0;
@@ -103,29 +97,15 @@ header .navbar .burger img{
         width: fit-content;
        
         
-    }
-    
+    }    
 
     header .navbar ul li ul li{
         border-top: none;
         
         
     }
-    header .navbar ul li ul .historie-container{
-        border-top: 0.1rem solid #ccc;
-        border-bottom: 0.1rem solid #90081F;
-        
-        border-left: 0.1rem solid #ccc;
-        
-    }
 
-    header .navbar ul li ul .disci-container{
-        border-right:0.1rem solid #ccc;
-        border-left: 0.1rem solid #ccc;
-        border-top: none;
-        border-bottom: 0.1rem solid #ccc;
-
-    }
+  
 
     
     /* Viser navigationselementerne, når checkboxen er markeret */
@@ -149,6 +129,7 @@ header .navbar .burger img{
     display:none
 }
 
+/*viser menu-layoutet for tablet og opefter*/
 header .navbar ul {
     
     display: flex;
@@ -192,7 +173,7 @@ header .navbar ul li ul li {
 
 }
 
-/*aktivering af under-menuen i HEMA+*/
+/*aktivering af den nye under-menu i "bliv spotter*/
 header .navbar ul li:hover > ul {
     display: block;
 }
