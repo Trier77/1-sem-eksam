@@ -4,27 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/navstyles.css">
     <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
 <body>
-    <h1>Spotter</h1>
-    <article>
-        <h2>De forskellige typer spottere</h2>
+    <header>
+        <!--navigation bar, logo,-->
+        <picture class="logo-kasse">
+            <a href="index.html">
+            <img class="logo" src="img/logodemo3.svg" alt="radar spotter logo"></a>
+        </picture>
+        <nav class="navbar">
+          <input type="checkbox" id="menu-toggle" >
+            <label for="menu-toggle" class="burger">
+                <img src="img/burger-menu-svgrepo-com.svg" alt="burger-menu-ikon">
+            </label>
+            <ul>
+                <li> <a href="index.html" >Find et spot</a>
+                   </li>
+                <li> <a href="bliv-spotter.html" class="guide-container">Bliv Spotter</a>
+                    <ul>
+                        <li> <a href="bliv-spotter.html" class="historie-container">Praktisk</a></li>
+                        <li> <a href="bliv-spotter.html" class="disci-container">Økonomisk</a></li>
+                        <li> <a href="bliv-spotter.html" class="teknisk-container">Teknisk</a></li>
+                        <li> <a href="bliv-spotter.html" class="ide-container">Idé</a></li>
+                    </ul></li>
+                
+                <li> <a href="hvorfor-spotte.html">Hvorfor Spotte</a></li>
+                <li> <a href="ideer.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        </header>
 
-        <h3>Runner</h3>
-        <p>Runnerne, er dem som hjælper med alt det praktiske. Bær udstyr hen hvor det skal være, står i baren og garderobe, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit excepturi voluptas autem alias sequi eaque dicta. Enim obcaecati ab voluptatum eos earum corrupti delectus reprehenderit, architecto natus, repellendus error!</p>
-        <h4>Du kan tilmelde dig til at blive runner her</h4>
+        <main>
+            <section class="spot-kasse">
+                <h1 class="spot-overskrift">Spotter</h1>
+                <article class="spot-artikel">
+                    <h2>De forskellige typer spottere</h2>
+            
+                    <h3>Runner</h3>
+                    <p>Runnerne, er dem som hjælper med alt det praktiske. Bær udstyr hen hvor det skal være, står i baren og garderobe, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit excepturi voluptas autem alias sequi eaque dicta. Enim obcaecati ab voluptatum eos earum corrupti delectus reprehenderit, architecto natus, repellendus error!</p>                    
+                    <a href="ideer.html">Du kan tilmelde dig til at blive runner her</a>
+            
+                    <h3>Økonomisk</h3>
+                    <p>De økonomikse spottere, er hvem som helst som donere penge til de individuelle projekter eller direkte til Radar. Du kan donere til et specifikt projekt, ved at finde projektet i oversigten. Klik på den. Find og klik på donér-knappen i bunden af projektet. Vælg herefter en betalingsmetode og indtast det beløb du ønsker at bidrage med. Vi siger tusind tak, hvad end donationen måtte være</p>
+            
+                    <h3>Teknisk</h3>
+                    <p>Tekniske spottere er dem så står for lyd, lys, kamera og andet visuelt. For at kunne blive spotter, skal man have bestået Radars tekniske kursus, så du er total med på hvordan Radars udstyr fungerer.</p>                    
+                    <a href="ideer.html">Du kan tilmelde dig til at blive teknisk spotter her</a>
+            
+                    <h3>Idé spotter</h3>
+                    <p>Hvis du har idéer til noget Radar kan gøre, samarbejdspartnere, mulige sponsorer, workshops og projekter, så skriv endelig til os</p>                    
+                    <a href="ideer.html">Du kan skrive din idé til os ved at klikke på knappen her</a>
 
-        <h3>Økonomisk</h3>
-        <p>De økonomikse spottere, er hvem som helst som donere penge til de individuelle projekter eller direkte til Radar. Du kan donere til et specifikt projekt, ved at finde projektet i oversigten. Klik på den. Find og klik på donér-knappen i bunden af projektet. Vælg herefter en betalingsmetode og indtast det beløb du ønsker at bidrage med. Vi siger tusind tak, hvad end donationen måtte være</p>
-
-        <h3>Teknisk</h3>
-        <p>Tekniske spottere er dem så står for lyd, lys, kamera og andet visuelt. For at kunne blive spotter, skal man have bestået Radars tekniske kursus, så du er total med på hvordan Radars udstyr fungerer.</p>
-        <h4>Du kan tilmelde dig til at blive teknisk spotter her</h4>
-
-        <h3>Idé spotter</h3>
-        <p>Hvis du har idéer til noget Radar kan gøre, samarbejdspartnere, mulige sponsorer, workshops og projekter, så skriv endelig til os</p>
-        <h4>Du kan skrive din idé til os ved at klikke på knappen her</h4>
-    </article>
+                </article>
+            </section>
+            
+        </main>
+    
 </body>
 </html>
